@@ -93,7 +93,28 @@ npm run dev
 
 ## Dataset
 
-We use the **[Bharat Scene Text Dataset](https://github.com/Bhashini-IITJ/BharatSceneTextDataset)** containing scene text in 13 Indian scripts. 
+We use the **[Bharat Scene Text Dataset](https://github.com/Bhashini-IITJ/BharatSceneTextDataset)** containing scene text in 13 Indian scripts.
+
+Download the dataset from the official [Bharat Scene Text Dataset](https://github.com/Bhashini-IITJ/BharatSceneTextDataset) and put the dataset folder in data directory as data/recognition
+
+```
+.
+└── data/recognition/
+    ├── train/        # Training data directory with subfolders for each class (language)
+    │   ├── english/
+    │   ├── gujarati/
+    │   ├── hindi/
+    │   └── ...       # Additional language/class folders
+    │
+    ├── test/         # Test data directory with subfolders for each class (language)
+    │   ├── english/
+    │   ├── gujarati/
+    │   ├── hindi/
+    │   └── ...       # Additional language/class folders
+    │
+    ├── train.csv     # CSV file mapping training images to their labels
+    └── test.csv      # CSV file mapping test images to their labels
+```
 
 In the data, we specifically use the Cropped Word Recognition Set. Data splits are provided for training and testing.
 
